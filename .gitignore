@@ -1,4 +1,18 @@
+# vscode
+.vscode 
+
+# Intellij
+*.iml
+.idea
+
+# npm
+node_modules
+
+# Exclude sourcemaps
+*.map
+
+# Exclude macOS Finder (System Explorer) View States
+.DS_Store
+
 Sans_Bordures.code-workspace
-theme_next.css.map
-theme.css.map
 theme_old.css
