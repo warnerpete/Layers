@@ -1,0 +1,35 @@
+.theme-light {
+	// background main
+	--background-primary: oklch(95% 0 0);
+	--background-primary-alt: oklch(98% 0 0);
+	--background-secondary: oklch(90% 0 0);
+	--background-secondary-alt: oklch(90% 0 0);
+	// other elements 
+	--empty-state-action-hover: oklch(100% 0 0);
+	--background-menu: oklch(97% 0 0deg / .95);
+	--background-menu-separator: oklch(0 0 0/ .07);
+	--background-modal-navigation: oklch(100% 0 0);
+	--background-modifier-border: oklch(84% 0 0);
+	--background-modifier-border-hover: oklch(88% 0 0);
+	--background-modifier-border-focus: hsla(var(--color-accent-hsl), 0.5);
+	--background-modifier-form-field: oklch(97% 0 0);
+	--background-modifier-menu-item-selected: ;
+	--background-setting-item: oklch(98% 0 0); 
+	--background-vertical-tab-group: white;
+	// borders
+	--card-border-color: oklch(80% 0 0);
+	--input-shadow: 0 1px 0 0 oklch(0 0 0 / 0.1);
+	--input-shadow-hover: 0 1px 3px 0 oklch(0 0 0 / 0.3);
+	--input-shadow-active: inset 0 0 0 1px var(--interactive-hover);
+	--input-shadow-active-accent: inset 0 0 0 1px var(--color-accent-darken);
+	--input-shadow-active-warning: inset 0 0 0 1px var(--background-modifier-error);
+	--color-accent-darken: hsl(
+		calc(var(--accent-h) - 0),
+		calc(var(--accent-s) * 0.9),
+		calc(var(--accent-l) * 0.75)
+	);
+	--interactive-normal: var(--background-primary-alt);
+	--interactive-hover: var(--color-base-40);
+	--shadow-s: 0 1px 6px oklch(0 0 0 / 0.2);
+	--text-max-contrast: black;
+}

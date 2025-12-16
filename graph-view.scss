@@ -1,0 +1,7 @@
+.graph-controls {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    &.is-close {
+        background-color: transparent;
+    }
+}

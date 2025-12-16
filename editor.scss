@@ -1,0 +1,36 @@
+/* Embed Stuff ------------------------------------------------------------------- */
+.workspace-leaf-content[data-type=markdown] .markdown-embed, 
+.workspace-leaf-content[data-type=markdown] .file-embed {
+  border-radius: var(--embed-border-radius);
+}
+
+/* Heading changes --------------------------------------------- */
+// allow ligatures to function correctly
+.inline-title:not([data-level]),
+.HyperMD-header-1, h1, .markdown-rendered h1,
+.HyperMD-list-line .cm-header-1,
+.HyperMD-header-2, h2, .markdown-rendered h2,
+.HyperMD-list-line .cm-header-2,
+.HyperMD-header-3, h3, .markdown-rendered h3,
+.HyperMD-list-line .cm-header-3,
+.HyperMD-header-4, h4, .markdown-rendered h4,
+.HyperMD-list-line .cm-header-4,
+.HyperMD-header-5, h5, .markdown-rendered h5,
+.HyperMD-list-line .cm-header-5,
+.HyperMD-header-6, h6, .markdown-rendered h6,
+.HyperMD-list-line .cm-header-6
+ {
+    letter-spacing: inherit;
+}
+
+/* Image styling ----------------------------------------------- */
+.cm-editor img {
+  border-radius: var(--radius-m);
+  border: 1px solid var(--color-base-30);
+  transition: border .35s var(--anim-expressive-default-spatial);
+  
+  &:hover {
+    // border-radius: var(--radius-m);
+    border: 1px solid var(--color-base-40);
+  }
+}

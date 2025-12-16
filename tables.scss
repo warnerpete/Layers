@@ -1,0 +1,110 @@
+/* mostly lifted from Cupertino by aaalexis */
+:root table {
+    border-collapse: separate;
+    border-spacing: 2px;
+  }
+
+.markdown-preview-view,
+  .cm-sizer {
+    table {
+      position: relative;
+      border-radius: var(--radius-s);
+    }
+
+    table::beforer {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      border: var(--table-border-width) solid var(--table-border-color);
+      border-radius: var(--radius-s);
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      pointer-events: none;
+      content: "";
+    }
+
+    .table-cell-wrapper:active,
+    .table-cell-wrapper:focus,
+    .table-cell-wrapper:focus-within {
+      background-color: var(--background-modifier-hover) !important;
+    }
+
+    thead,
+    tbody {
+      background-color: var(--background-primary-alt);
+    }
+
+    thead tr th {
+      border: none;
+    }
+
+    tr td,
+    tr th {
+      border: none;
+      border: none;
+    }
+
+    th:first-child,
+    th:first-child .table-cell-wrapper {
+      border-top-left-radius: var(--radius-s);
+    }
+    th:last-child,
+    th:last-child .table-cell-wrapper {
+      border-top-right-radius: var(--radius-s);
+    }
+    tr:last-child td:first-child,
+    tr:last-child td:first-child .table-cell-wrapper {
+      border-bottom-left-radius: var(--radius-s);
+    }
+    tr:last-child td:last-child,
+    tr:last-child td:last-child .table-cell-wrapper {
+      border-bottom-right-radius: var(--radius-s);
+    }
+
+    .cm-table-widget[dir="rtl"],
+    .el-table[dir="rtl"],
+    div[dir="rtl"] {
+      th:first-child,
+      th:first-child .table-cell-wrapper {
+        border-top-right-radius: var(--radius-s);
+        border-top-left-radius: 0;
+      }
+      th:last-child,
+      th:last-child .table-cell-wrapper {
+        border-top-right-radius: 0;
+        border-top-left-radius: var(--radius-s);
+      }
+      tr:last-child td:first-child,
+      tr:last-child td:first-child .table-cell-wrapper {
+        border-bottom-right-radius: var(--radius-s);
+        border-bottom-left-radius: 0;
+      }
+      tr:last-child td:last-child,
+      tr:last-child td:last-child .table-cell-wrapper {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: var(--radius-s);
+      }
+
+      tr th:first-child,
+      tr td:first-child {
+        border-left: var(--table-border-width) solid var(--table-border-color);
+      }
+      tr th:last-child,
+      tr td:last-child {
+        border-left-width: 0 !important;
+      }
+    }
+
+    .table-col-btn,
+    .table-row-btn {
+      border: none !important;
+    }
+  }
+
+  .cm-html-embed td,
+  .markdown-rendered td,
+  .cm-html-embed th,
+  .markdown-rendered th,
+  .markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper {
+    padding: 8px;
+  }

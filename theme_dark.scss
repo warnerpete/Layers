@@ -1,0 +1,44 @@
+.theme-dark {
+	--color-base-30-rgb: 54, 54, 54;
+	--color-base-35-rgb: 63, 63, 63;
+	--color-base-25-rgb: 42, 42, 42;
+	// main background
+	--background-primary: oklch(35% 0 0);
+	--background-primary-alt: oklch(39% 0 0);
+	--background-secondary: oklch(31% 0 0);
+	--background-secondary-alt: oklch(31% 0 0);
+	// other background 
+	--empty-state-action-hover: oklch(42% 0 0);
+	--background-menu: oklch(38% 0 0deg / .9);
+	--background-menu-border: ;
+	--background-menu-separator: oklch(0 0 0/ .13);
+	--background-modal-navigation: oklch(42% 0 0);
+	--background-modifier-border: oklch(42% 0 0);
+	--background-modifier-border-hover: oklch(44% 0 0);
+	--background-modifier-border-focus: hsla(var(--color-accent-hsl), 0.5);
+	--background-modifier-form-field: oklch(31% 0 0);
+	--background-modifier-menu-item-selected: ;
+	--background-setting-item: oklch(38% 0 0); 
+	--background-vertical-tab-group: oklch(41% 0 0);
+	// borders
+	--card-border-color: oklch(27% 0 0);
+	--input-shadow: 0 1px 0 0 oklch(0% 0 0 / 0.1);
+	--input-shadow-hover: 0 1px 3px 0 oklch(0% 0 0 / 0.3);
+	--input-shadow-active: inset 0 0 0 1px var(--interactive-hover);
+	--input-shadow-active-accent: inset 0 0 0 1px var(--color-accent-darken);
+	--input-shadow-active-warning: inset 0 0 0 1px var(--background-modifier-error);
+	--color-accent-darken: hsl(
+		calc(var(--accent-h) - 0),
+		calc(var(--accent-s) * 0.9),
+		calc(var(--accent-l) * 0.75)
+	);
+	--interactive-normal: var(--background-primary-alt);
+	--interactive-hover: var(--color-base-40);
+	--shadow-s: 0 1px 3px rgba(0, 0, 0, 0.5);
+	--text-normal: oklch(.95 0 0);
+	--text-max-contrast: white;
+	--menu-delete-warning-hover: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert-icon lucide-triangle-alert"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>');
+	// Toggles
+	--check-mark: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="lightgrey" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>');
+	--check-mark-small: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="lightgrey" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>');
+}

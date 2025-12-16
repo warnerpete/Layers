@@ -1,0 +1,247 @@
+/* Button and Input ------------------------------------ */
+button{
+  &:not(.clickable-icon) {
+    transition: all .15s;
+  }
+
+  &:active {
+    background-color: transparent;
+    box-shadow: var(--input-shadow-active);
+    color: var(--text-muted);
+  }
+
+  &.mod-cta:active {
+    background-color: transparent;
+    box-shadow: var(--input-shadow-active-accent);
+    color: var(--color-accent);
+  }
+
+  &.mod-warning:active {
+    background-color: transparent;
+    box-shadow: var(--input-shadow-active-warning);
+    color: var(--background-modifier-error);
+  }
+}
+
+select,
+.dropdown {
+  transition: all .1s ease-in;
+}
+
+// make clickable icons bigger
+.nav-action-button,
+.side-dock-ribbon-action,
+.view-action,
+.sidebar-toggle-button > .clickable-icon,
+.view-header-nav-buttons > .clickable-icon,
+.workspace-drawer-vault-actions > .clickable-icon,
+.view-header-reload-button > .clickable-icon {
+  padding: 8px 10px;
+}
+
+.clickable-icon.extra-setting-button {
+    padding: 6px;
+}
+
+.pdf-toolbar-left > .clickable-icon {
+  padding: 6px 8px;
+}
+
+// Hover stuff
+*:not(.search-row) > .clickable-icon {
+  &.has-active-menu,
+  &:hover:active {
+    background-color: transparent;
+    color: var(--text-faint);
+    transition: background-color, color .15s ease-out;
+  }
+
+  &.has-active-menu,
+  &:hover:active {
+    background-color: transparent;
+    color: var(--text-faint);
+    transition: background-color, color .15s ease-out;
+  }
+
+  &.has-active-menu,
+  &:active:not(:hover) {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-normal);
+  }
+}
+
+// Make STB blend in
+.sidebar-toggle-button {
+  &.mod-left {
+    padding: 4px 0 5px 1px;
+  }
+  
+  &.mod-right {
+    padding: 4px 0 1px 0;
+    .clickable-icon {
+     padding: 8px;
+    }
+  }
+}
+
+/* special rules for buttons on light backgrounds e. g. setting-items */
+.vertical-tab-content button:not(.clickable-icon):not(.mod-cta) {
+  &:not(.mod-warning) { 
+    background-color: var(--background-modal-navigation);
+  }
+
+  &:not(.mod-warning):active {
+    background-color: transparent;
+  }
+
+  &:not(.mod-warning):hover:not(:active) {
+    background-color: var(--color-base-40);
+  }
+
+  &.mod-warning:active {
+    background-color: transparent;
+  }
+}
+
+/* the same for dropdowns */
+.vertical-tab-content select, 
+.setting-item .dropdown {
+  background-color: var(--background-modal-navigation);
+  &:hover {
+    background-color: var(--color-base-40);
+  }
+  &:active {
+    background-color: transparent;
+  }
+}
+
+/* Left side dock Fitts-law compliance */
+.workspace-ribbon.side-dock-ribbon.mod-left {
+  padding: 8px 4px 12px 0;
+
+  .sidebar-toggle-button.mod-left {
+    .clickable-icon {
+      position: relative;
+
+    } 
+
+    .clickable-icon:hover {
+      background-color: transparent;
+      opacity: var(--icon-opacity);
+    }
+
+    &:hover .clickable-icon {
+      background-color: transparent;
+      opacity: var(--icon-opacity-hover);
+      transition: color .15s ease-out;
+    }
+
+    &:hover:active .clickable-icon {
+      opacity: var(--icon-opacity-active);
+      color: var(--text-faint);
+      transition: color .15s ease-out;
+    }
+    
+    &:hover .clickable-icon::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: auto;
+      background-color: var(--background-modifier-hover);
+      border-radius: inherit;
+      transition: background-color .15s ease-out;
+    }
+
+    &:hover:active .clickable-icon::after {
+      background-color: transparent;
+    }
+  } 
+}
+
+.side-dock-ribbon-action {
+  position: relative;
+  padding: 8px 10px 8px 14px;
+  
+  &:hover, &:active {
+    background-color: transparent;
+  }
+  
+  &:hover:not(:active)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 4px;
+    right: 0;
+    height: 100%;
+    width: 38px;
+    pointer-events: none;
+    transition: inherit;
+    background-color: var(--background-modifier-hover);
+    border-radius: inherit;
+  }
+}
+
+
+.vertical-tab-content input.slider {
+  background-color: var(--color-base-40);
+}
+
+/* Titlebar buttons */
+.titlebar-button {
+  position: relative;
+  
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.mod-linux .titlebar-button.mod-close:hover, 
+.mod-windows .titlebar-button.mod-close:hover {
+    background-color: transparent;
+}
+
+.titlebar-button.mod-minimize:hover::after {
+    content: "";
+    height: 24px;
+    width: 24px;
+    background-color: rgba(255 255 255 / .1);
+    top: auto;
+    left: 10px;
+    right: auto;
+    bottom: auto;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.titlebar-button.mod-maximize:hover::after {
+    content: "";
+    height: 24px;
+    width: 24px;
+    background-color: rgba(255 255 255 / .1);
+    top: auto;
+    left: 10px;
+    right: auto;
+    bottom: auto;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.titlebar-button.mod-close:hover::after {
+    content: "";
+    height: 24px;
+    width: 24px;
+    background-color: rgba(255 255 255 / .1);
+    top: auto;
+    left: 10px;
+    right: auto;
+    bottom: auto;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+    background-color: transparent;
+}

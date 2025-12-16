@@ -1,0 +1,33 @@
+/* Status bar ------------------------------------------------ */
+.status-bar {
+  bottom: 0px;
+  right: 0px;
+  border-width: 0;
+  background-color: var(--color-base-35);
+  backdrop-filter: saturate(1.4) blur(8px);
+  mix-blend-mode: luminosity;
+  box-shadow: 0 1px 3px oklch(0% 0 0 / 50%);
+  border-radius: 4px 0 0 0;
+  padding: 0;
+  gap: 0;
+}
+
+.status-bar-item {
+  padding: 8px;
+  color: var(--text-muted);
+  
+  &:first-of-type {
+    border-radius: inherit;
+  }
+
+  &:not(:first-of-type) {
+    border-radius: 0;
+  }
+}
+
+.status-bar-item-icon {
+  padding: 2px;
+}
+
+
+

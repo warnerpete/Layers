@@ -1,0 +1,164 @@
+/* Settings ----------------------------------------------------- */
+/* Header --------------- */
+.modal.mod-settings {
+    &.mod-sidebar-layout .modal-header {
+        display: flex;
+        margin-bottom: 7px;
+        color: transparent;
+    }
+
+    .modal-setting-back-button {
+        display: none;
+    }
+
+    .vertical-tab-header {
+        padding: 0 6px 12px 12px;
+        .vertical-tab-header-group:first-of-type {
+            padding: 0 0 12px 0;
+        }
+    }
+
+    // Header related padding removal
+    &.mod-sidebar-layout {
+        .vertical-tab-content {
+            padding-top: 0;
+        }
+
+        .vertical-tab-header-group:first-of-type  .vertical-tab-header-group-title {
+            padding: 1px 8px 8px 8px;
+        }
+    }
+}
+
+/* Left pane ------------ */
+body:not(.is-phone) .vertical-tab-header-group-items {
+    gap: 0;
+    background-color: var(--background-vertical-tab-group);
+    border-radius: 4px;
+    box-shadow: 0 2px 0 0 var(--background-secondary);
+}
+
+.vertical-tab-header-group-title {
+    color: var(--text-muted); // make VTHGT more readable
+}
+
+body:not(.is-phone) .horizontal-tab-nav-item.is-active, 
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+    color: inherit;
+    background-color: inherit;
+    box-shadow: inset 4px 0 0 0 var(--interactive-accent);
+}
+
+.horizontal-tab-nav-item, 
+.vertical-tab-nav-item {
+    border-top: 1px solid var(--background-primary);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    transition: all .2s ease-out;
+    box-shadow: inset 0px 0 0 0 var(--interactive-accent);
+    border-radius: 0;
+}
+
+.vertical-tab-nav-item {
+    &:nth-of-type(1) {
+    border-radius: 4px 4px 0 0;
+    border-top: none;
+    }
+    &:nth-last-of-type(1) {
+    border-radius: 0 0 4px 4px;
+    }
+}
+
+/* Right pane ------------ */
+// Setting items
+.vertical-tab-content .setting-item:not(.setting-item-heading) {
+    display: flex;
+    align-items: center;
+    padding: 0.75em 0;
+    border-top: none;
+    background-color: var(--background-setting-item);
+    border-radius: 4px;
+    margin: 4px 1px 0 1px;
+    padding: 0.75em 24px;
+}
+
+.horizontal-tab-content, 
+.vertical-tab-content {
+    background-color: var(--background-primary);
+    padding-inline-start: 12px;
+    padding-inline-end: 12px;
+    /*animation: slide-in .35s var(--anim-expressive-default-spatial);*/
+}
+
+.vertical-tab-header {
+    padding: 12px 6px 12px 12px;
+    background-color: inherit;
+}
+
+// Switches ---------------------------------------------------->
+// Great ...
+.checkbox-container {
+  background-color: var(--background-setting-item);
+  box-shadow: inset 0 0 0 1px var(--background-modifier-border-hover);
+  transition: 
+    box-shadow 0.15s,
+    outline 0.15s ease-in-out,
+    border 0.15s ease-in-out,
+    opacity 0.15s ease-in-out, 
+    background-image 0.15s;
+
+  &:hover  {
+    box-shadow: inset 0 0 0 1px var(--color-base-50);
+  }
+
+  &::after {
+    width: 14px;
+    height: 14px;
+    margin: 4px 0 0 3px;
+    border-radius: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-color: var(--color-base-100)
+  }
+
+  &.is-enabled {
+    box-shadow: inset 0 0 0 0 var(--color-accent);
+  }
+
+  &.is-enabled:hover {
+    background-color: var(--interactive-accent-hover);
+  }
+
+  &.is-enabled::after {
+    background-color: var(--background-primary);
+    background-image: var(--check-mark);
+    margin: 2px 0 0 0;
+  }
+
+  &.is-enabled:hover::after {
+    background-color: var(--background-primary-alt);
+  }
+
+  &:not(.mod-small).is-enabled::after {
+    width: var(--toggle-thumb-width);
+    height: var(--toggle-thumb-height);
+  }
+}
+
+// ... and small
+.checkbox-container.mod-small {
+  &:not(.is-enabled)::after {
+    width: 11px; // calc(var(--toggle-s-thumb-width) -4px)
+    height: 11px;
+    margin: 4px 0 0px 2px;
+    transform: translate3d(var(--toggle-s-border-width), 0, 0);
+  }
+
+  &.is-enabled::after {
+    background-image: var(--check-mark-small) 
+  }
+}

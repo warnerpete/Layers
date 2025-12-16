@@ -1,0 +1,10 @@
+/* Modals ----------------------- */
+
+.mod-dim .modal-bg {
+    opacity: 1 !important;
+    //backdrop-filter: blur(2px);
+    //animation: blur-in 0.15s ease-out;
+    animation: dark-cover 1.15 ease-out;
+    background-color: oklch(.2 0 0 / .9);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='white' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
