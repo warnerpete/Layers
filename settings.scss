@@ -3,7 +3,7 @@
 .modal.mod-settings {
     &.mod-sidebar-layout .modal-header {
         display: flex;
-        margin-bottom: 7px;
+        margin-bottom: 8px;
         color: transparent;
     }
 
@@ -72,6 +72,11 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 
 /* Right pane ------------ */
 // Setting items
+.setting-group > .setting-items {
+  background-color: transparent;
+  padding: 0;
+}
+
 .vertical-tab-content .setting-item:not(.setting-item-heading) {
     display: flex;
     align-items: center;
