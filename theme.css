@@ -1125,7 +1125,7 @@ body:not(.is-mobile) .workspace-split.mod-sidedock.mod-left-split .workspace-sid
 
 .empty-state-action {
   cursor: var(--cursor);
-  line-height: 40px;
+  line-height: 56px;
   color: var(--text-accent);
   background-color: var(--background-primary-alt);
   border-radius: 8px;
