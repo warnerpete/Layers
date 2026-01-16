@@ -1,5 +1,6 @@
 # vscode
 .vscode 
+*.code-workspace
 
 # Intellij
 *.iml
@@ -14,5 +15,4 @@ node_modules
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
 
-Sans_Bordures.code-workspace
 theme_old.css
