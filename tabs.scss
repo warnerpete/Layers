@@ -77,15 +77,15 @@
 }
 
 /* Tabs mod-left-right-split */
-.mod-left-split .workspace-tab-header-container-inner, 
-.mod-right-split .workspace-tab-header-container-inner {
+.mod-left-split .workspace-tab-header-container .workspace-tab-header-container-inner, 
+.mod-right-split .workspace-tab-header-container .workspace-tab-header-container-inner {
     padding: 0px 0 6px;
     margin: 4px 0 0 0;
     gap: 0;
 }
 
-.mod-left-split .workspace-tab-header,
-.mod-right-split .workspace-tab-header {
+.mod-left-split .workspace-tab-header-container .workspace-tab-header,
+.mod-right-split .workspace-tab-header-container .workspace-tab-header {
   background-color: var(--color-base-35);
   border-radius: 0;
   border-left: 1px solid var(--background-secondary);
@@ -96,8 +96,8 @@
   }
 }
 
-.mod-left-split .workspace-tab-header.tappable,
-.mod-right-split .workspace-tab-header.tappable {
+.mod-left-split .workspace-tab-header-container .workspace-tab-header.tappable,
+.mod-right-split .workspace-tab-header-container .workspace-tab-header.tappable {
   &:only-of-type {
     border-radius: 4px !important;
   }
