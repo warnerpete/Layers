@@ -16,3 +16,5 @@ node_modules
 .DS_Store
 
 theme_old.css
+.compile_variables
+compile.sh
