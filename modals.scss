@@ -8,3 +8,15 @@
     background-color: oklch(.2 0 0 / .9);
     background-image: var(--background-img-modal);
 }
+
+.modal-button-container {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    button {
+        width: 100%;
+    }
+}
+
+*:not(.mod-rtl) .modal-button-container {
+    flex-direction: row-reverse;
+}

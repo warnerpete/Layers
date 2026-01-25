@@ -312,6 +312,14 @@ select,
   background-image: var(--background-img-modal);
 }
 
+.modal-button-container {
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+.modal-button-container button {
+  width: 100%;
+}
+
 /* Settings ----------------------------------------------------- */
 /* Header --------------- */
 .modal.mod-settings.mod-sidebar-layout .modal-header {
@@ -401,6 +409,10 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .vertical-tab-header {
   padding: 12px 6px 12px 12px;
   background-color: inherit;
+}
+
+.setting-group .setting-group-search {
+  border-radius: var(--setting-items-radius);
 }
 
 .checkbox-container {
@@ -926,8 +938,8 @@ body {
   --ribbon-background: initial;
   --ribbon-background-collapsed: initial;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
-  /* Window frame */
-  --titlebar-background: var(--background-secondary-alt);
+  /* Settings */
+  --setting-items-radius: var(--radius-s);
   /* Tabs */
   --tab-background-active: var(--background-modal-navigation);
   --tab-container-background: var(--background-secondary-alt);
@@ -939,6 +951,8 @@ body {
   /* View Header */
   --header-height: 44px;
   --menu-delete-warning-hover: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert-icon lucide-triangle-alert"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>');
+  /* Window frame */
+  --titlebar-background: var(--background-secondary-alt);
 }
 
 body {
