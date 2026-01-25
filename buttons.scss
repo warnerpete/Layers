@@ -247,7 +247,7 @@ select,
 }
 
 // Switches ---------------------------------------------------->
-// Great ...
+// Normal size
 .checkbox-container {
   background-color: var(--background-setting-item);
   box-shadow: inset 0 0 0 1px var(--background-modifier-border-hover);
@@ -263,10 +263,10 @@ select,
   }
 
   &::after {
-    width: 14px;
-    height: 14px;
-    margin: 4px 0 0 3px;
-    border-radius: 14px;
+    //width: 14px;
+    //height: 14px;
+    //margin: 4px 0 0 3px;
+    //border-radius: 14px;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -285,29 +285,26 @@ select,
 
   &.is-enabled::after {
     background-color: var(--background-primary);
-    background-image: var(--check-mark);
-    margin: 2px 0 0 0;
+    background-image: var(--check-mark-small);
+    //margin: 2px 0 0 0;
   }
 
   &.is-enabled:hover::after {
     background-color: var(--background-primary-alt);
   }
 
-  &:not(.mod-small).is-enabled::after {
-    width: var(--toggle-thumb-width);
-    height: var(--toggle-thumb-height);
-  }
+  //&:not(.mod-small).is-enabled::after {
+  //  width: var(--toggle-thumb-width);
+  //  height: var(--toggle-thumb-height);
+  //}
+}
+
+.modal .checkbox-container.is-enabled::after {
+  background-image: var(--check-mark);
 }
 
 // ... and small
 .checkbox-container.mod-small {
-  &:not(.is-enabled)::after {
-    width: 11px; // calc(var(--toggle-s-thumb-width) -4px)
-    height: 11px;
-    margin: 4px 0 0px 2px;
-    transform: translate3d(var(--toggle-s-border-width), 0, 0);
-  }
-
   &.is-enabled::after {
     background-image: var(--check-mark-small) 
   }
