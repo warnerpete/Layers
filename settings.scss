@@ -101,6 +101,11 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
     background-color: inherit;
 }
 
+// Setting group search
+.setting-group .setting-group-search {
+  border-radius: var(--setting-items-radius);
+}
+
 // Switches ---------------------------------------------------->
 // Great ...
 .checkbox-container {
