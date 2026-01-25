@@ -76,6 +76,8 @@ body {
   --ribbon-background: initial;
   --ribbon-background-collapsed: initial;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
+  /* Settings */
+  --setting-items-radius: var(--radius-s);
   /* Tabs */
   --tab-background-active: var(--background-modal-navigation);
   --tab-container-background: var(--background-secondary-alt);
