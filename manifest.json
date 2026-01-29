@@ -1,7 +1,7 @@
 {
 	"name": "Layers",
-	"version": "2025-12",
-	"minAppVersion": "1.10.0",
+	"version": "v2026-01-beta",
+	"minAppVersion": "1.11.0",
 	"author": "Ulfius",
 	"authorUrl": "https://example.com/"
 }

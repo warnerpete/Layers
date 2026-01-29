@@ -247,7 +247,7 @@ select,
 }
 
 // Switches ---------------------------------------------------->
-// Normal size
+// General
 .checkbox-container {
   background-color: var(--background-setting-item);
   box-shadow: inset 0 0 0 1px var(--background-modifier-border-hover);
@@ -298,12 +298,12 @@ select,
   //  height: var(--toggle-thumb-height);
   //}
 }
-
+// Modal switches
 .modal .checkbox-container.is-enabled::after {
   background-image: var(--check-mark);
 }
 
-// ... and small
+// Mod small
 .checkbox-container.mod-small {
   &.is-enabled::after {
     background-image: var(--check-mark-small) 
