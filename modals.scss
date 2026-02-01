@@ -16,7 +16,30 @@
         width: 100%;
     }
 }
-
+// Modal button position and size
 *:not(.mod-rtl) .modal-button-container {
     flex-direction: row-reverse;
+}
+// Community items browser
+.modal-sidebar {
+    background-color: var(--background-menu);
+}
+
+.community-modal-search-results-wrapper {
+    border-top: var(--border-width) solid var(--background-menu-separator);
+    box-shadow: inset 0 4px 4px -4px oklch(0 0 0 / 30%);
+    scroll-padding: var(--size-4-3);
+    contain: strict;
+}
+
+.community-modal-details {
+    border-inline-start: var(--border-width) solid var(--background-menu-separator);
+}
+
+.modal-setting-nav-bar {
+    border-bottom: var(--border-width) solid var(--background-menu-separator);
+}
+
+.community-modal-info {
+	box-shadow: inset 0 4px 4px -4px oklch(0 0 0 / 30%);
 }
