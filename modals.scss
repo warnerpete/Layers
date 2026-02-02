@@ -1,5 +1,4 @@
 /* Modals ----------------------- */
-
 .mod-dim .modal-bg {
     opacity: 1 !important;
     //backdrop-filter: blur(2px);
@@ -9,6 +8,7 @@
     background-image: var(--background-img-modal);
 }
 
+// Modal button position and size
 .modal-button-container {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
@@ -16,10 +16,11 @@
         width: 100%;
     }
 }
-// Modal button position and size
+
 *:not(.mod-rtl) .modal-button-container {
     flex-direction: row-reverse;
 }
+
 // Community items browser
 .modal-sidebar {
     background-color: var(--background-menu);
