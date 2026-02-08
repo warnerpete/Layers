@@ -205,41 +205,41 @@ select,
 
 .titlebar-button.mod-minimize:hover::after {
     content: "";
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
     background-color: rgba(255 255 255 / .1);
     top: auto;
-    left: 10px;
+    left: 8px;
     right: auto;
     bottom: auto;
     position: absolute;
-    border-radius: 15px;
+    border-radius: 28px;
 }
 
 .titlebar-button.mod-maximize:hover::after {
     content: "";
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
     background-color: rgba(255 255 255 / .1);
     top: auto;
-    left: 10px;
+    left: 8px;
     right: auto;
     bottom: auto;
     position: absolute;
-    border-radius: 15px;
+    border-radius: 28px;
 }
 
 .titlebar-button.mod-close:hover::after {
     content: "";
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
     background-color: rgba(255 255 255 / .1);
     top: auto;
-    left: 10px;
+    left: 8px;
     right: auto;
     bottom: auto;
     position: absolute;
-    border-radius: 15px;
+    border-radius: 28px;
 }
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
