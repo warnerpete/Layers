@@ -203,32 +203,8 @@ select,
     background-color: transparent;
 }
 
-.titlebar-button.mod-minimize:hover::after {
-    content: "";
-    height: 28px;
-    width: 28px;
-    background-color: rgba(255 255 255 / .1);
-    top: auto;
-    left: 8px;
-    right: auto;
-    bottom: auto;
-    position: absolute;
-    border-radius: 28px;
-}
-
-.titlebar-button.mod-maximize:hover::after {
-    content: "";
-    height: 28px;
-    width: 28px;
-    background-color: rgba(255 255 255 / .1);
-    top: auto;
-    left: 8px;
-    right: auto;
-    bottom: auto;
-    position: absolute;
-    border-radius: 28px;
-}
-
+.titlebar-button.mod-minimize:hover::after,
+.titlebar-button.mod-maximize:hover::after,
 .titlebar-button.mod-close:hover::after {
     content: "";
     height: 28px;
